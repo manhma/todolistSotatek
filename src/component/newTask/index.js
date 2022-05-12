@@ -47,14 +47,14 @@ export default function NewTask({ todolist, setTodolist }) {
         className="creatInput"
         placeholder="Add new task ..."
       />
-      <div style={{ marginTop: "30px", fontWeight: "bold" }}>Description</div>
+      <div className="label">Description</div>
       <textarea
         onChange={(e) => setDescInput(e.target.value)}
         className="textarea"
       />
       <div className="selectBlock">
         <div className="selectBlockElement">
-          <div style={{ fontWeight: "bold" }}>Due Date</div>
+          <div className="label">Due Date</div>
           <input
             value={dateInput}
             onChange={(e) => setDateInput(e.target.value)}
@@ -63,7 +63,7 @@ export default function NewTask({ todolist, setTodolist }) {
           />
         </div>
         <div className="selectBlockElement">
-          <div style={{ fontWeight: "bold" }}>Priority</div>
+          <div className="label">Priority</div>
           <select
             onChange={(e) => setPriorityInput(e.target.value)}
             className="selectInput"

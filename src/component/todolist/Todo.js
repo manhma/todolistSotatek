@@ -61,9 +61,7 @@ export default function Todo({ todo, todolist, setTodolist, handleChecked }) {
             onChange={(e) => setEditTitle(e.target.value)}
             className="creatInput"
           />
-          <div style={{ marginTop: "30px", fontWeight: "bold" }}>
-            Description
-          </div>
+          <div className="label">Description</div>
           <textarea
             value={editDesc}
             onChange={(e) => setEditDesc(e.target.value)}
@@ -71,7 +69,7 @@ export default function Todo({ todo, todolist, setTodolist, handleChecked }) {
           />
           <div className="selectBlock">
             <div className="selectBlockElement">
-              <div style={{ fontWeight: "bold" }}>Due Date</div>
+              <div className="label">Due Date</div>
               <input
                 value={editDate}
                 onChange={(e) => setEditDate(e.target.value)}
@@ -80,7 +78,7 @@ export default function Todo({ todo, todolist, setTodolist, handleChecked }) {
               />
             </div>
             <div className="selectBlockElement">
-              <div style={{ fontWeight: "bold" }}>Piority</div>
+              <div className="label">Piority</div>
               <select
                 className="selectInput"
                 value={editPriority}

@@ -1,120 +1,386 @@
-.App {
-  display: flex;
-}
-.header{
-  text-align: center;
-  margin-bottom: 30px;
-}
-.btn{
-  border: none;
-  border-radius: 3px;
-  color: white;
-}
-.newTask{
-  position: fixed;
-  top:0px;
-  left: 0px;
-  width: 40vw;
-  height: 100vh;
-  border-right: solid 1px black;
-  padding: 0 50px;
-  box-sizing: border-box;
-}
 
-.creatInput{
-  width: 100%;
-  height: 33px;
-  padding-left: 15px;
-  box-sizing: border-box;
-}
-.textarea{
-  width: 100%;;
-  max-width: 100%;
-  min-height: 70px;
-}
-.selectBlock{
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-.selectBlockElement{
-  width: 40%;
-}
-.selectInput{
-  width: 100%;
-  height: 25px;
-  margin-top: 8px;
-}
-.addBtn{
-  margin-top: 50px;
-  width: 100%;
-  height: 28px;
-  background-color: #5cb85c;
-  font-weight: bold;
-}
-
-
-.todolist{
-  margin-left: 40vw;
-  width: 60vw;
-  height: 100vh;
-}
-.wrapperTodoist{
-  padding: 0 130px 80px 80px;
-  box-sizing: border-box;
-
-}
-.todos{
-}
-.todo{
-  margin-top: 20px;
-  border: solid 1px black;
-}
-.todoContent{
-  display: flex;
-  padding: 13px;
-}
-.checkbox{
-  width: 16px;
-  height: 16px;
-}
-.todoLabel{
-  margin-left: 10px;
-  flex: 1;
-}
-.todoBtn{
-  width: 90px;
-  height: 27px;
-  margin: 0 10px;
-}
-.detailBtn{
-  background-color: #00bcd4;
-}
-.removeBtn{
-  background-color: #d9534f;
-}
-.bulkBlock{
-  position: fixed;
-  width: 60%;
-  bottom: 0px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  background-color: #e0e0e0;
-  padding-left: 40px;
-  padding-right: 20px;
+  .App {
+    display: flex;
+  }
+  .header{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .btn{
+    border: none;
+    border-radius: 3px;
+    color: white;
+  }
+  .newTask{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 40vw;
+    height: 100vh;
+    border-right: solid 1px black;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
   
+  .creatInput{
+    width: 100%;
+    height: 33px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .label{
+    font-weight: bold;
+  }
+  .textarea{
+    width: 100%;;
+    max-width: 100%;
+    min-height: 70px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  
+  }
+  .selectBlock{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .selectBlockElement{
+    width: 40%;
+  }
+  .selectInput{
+    width: 100%;
+    height: 25px;
+    margin-top: 8px;
+  }
+  .addBtn{
+    margin-top: 50px;
+    width: 100%;
+    height: 28px;
+    background-color: #5cb85c;
+    font-weight: bold;
+  }
+  
+  
+  .todolist{
+    margin-left: 40vw;
+    width: 60vw;
+    height: 100vh;
+  }
+  .wrapperTodoist{
+    padding: 0 130px 80px 80px;
+    box-sizing: border-box;
+  
+  }
+  
+  .todo{
+    margin-top: 20px;
+    border: solid 1px black;
+  }
+  .todoContent{
+    display: flex;
+    padding: 13px;
+  }
+  .checkbox{
+    width: 16px;
+    height: 16px;
+  }
+  .todoLabel{
+    margin-left: 10px;
+    flex: 1;
+  }
+  .todoBtn{
+    width: 90px;
+    height: 27px;
+    margin: 0 10px;
+  }
+  .detailBtn{
+    background-color: #00bcd4;
+  }
+  .removeBtn{
+    background-color: #d9534f;
+  }
+  .bulkBlock{
+    position: fixed;
+    width: 60%;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+  }
+  .bulkBtn{
+    width: 130px;
+    height: 30px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  .doneBtn{
+    background-color: #2196f3;
+  }
+  .todoDetail{
+    border-top: solid 1px black;
+    padding: 20px;
+  }
+
+
+@media only screen and (max-width: 1200px){
+  .App {
+    display: flex;
+  }
+  .header{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .btn{
+    border: none;
+    border-radius: 3px;
+    color: white;
+  }
+  .newTask{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 40vw;
+    height: 100vh;
+    border-right: solid 1px black;
+    padding: 0 35px;
+    box-sizing: border-box;
+  }
+  
+  .creatInput{
+    width: 100%;
+    height: 33px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .label{
+    font-weight: bold;
+  }
+  .textarea{
+    width: 100%;;
+    max-width: 100%;
+    min-height: 70px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  
+  }
+  .selectBlock{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .selectBlockElement{
+    width: 40%;
+  }
+  .selectInput{
+    width: 100%;
+    height: 25px;
+    margin-top: 8px;
+  }
+  .addBtn{
+    margin-top: 40px;
+    width: 100%;
+    height: 28px;
+    background-color: #5cb85c;
+    font-weight: bold;
+  }
+  
+  
+  .todolist{
+    margin-left: 40vw;
+    width: 60vw;
+    height: 100vh;
+  }
+  .wrapperTodoist{
+    padding: 0 60px 80px 40px;
+    box-sizing: border-box;
+  
+  }
+  
+  .todo{
+    margin-top: 20px;
+    border: solid 1px black;
+  }
+  .todoContent{
+    display: flex;
+    padding: 13px;
+  }
+  .checkbox{
+    width: 16px;
+    height: 16px;
+  }
+  .todoLabel{
+    margin-left: 10px;
+    flex: 1;
+  }
+  .todoBtn{
+    width: 60px;
+    height: 27px;
+    margin: 0 10px;
+  }
+  .detailBtn{
+    background-color: #00bcd4;
+  }
+  .removeBtn{
+    background-color: #d9534f;
+  }
+  .bulkBlock{
+    position: fixed;
+    width: 60%;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+  }
+  .bulkBtn{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    margin: 15px 20px;
+  }
+  .doneBtn{
+    background-color: #2196f3;
+  }
+  .todoDetail{
+    border-top: solid 1px black;
+    padding: 20px;
+  }
 }
-.bulkBtn{
-  width: 130px;
-  height: 30px;
-  font-weight: bold;
-  margin: 20px;
-}
-.doneBtn{
-  background-color: #2196f3;
-}
-.todoDetail{
-  border-top: solid 1px black;
-  padding: 20px;
+
+@media only screen and (max-width: 800px){
+  .App {
+    display: block;
+  }
+  .header{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .btn{
+    border: none;
+    border-radius: 3px;
+    color: white;
+  }
+  .newTask{
+    position: static;
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px black;
+    border-right: none;
+    padding: 0 50px 30px 50px;
+    box-sizing: border-box;
+  }
+  
+  .creatInput{
+    width: 100%;
+    height: 33px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  .label{
+    font-weight: bold;
+  }
+  .textarea{
+    width: 100%;;
+    max-width: 100%;
+    min-height: 70px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  
+  }
+  .selectBlock{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .selectBlockElement{
+    width: 40%;
+  }
+  .selectInput{
+    width: 100%;
+    height: 25px;
+    margin-top: 8px;
+  }
+  .addBtn{
+    margin-top: 50px;
+    width: 100%;
+    height: 28px;
+    background-color: #5cb85c;
+    font-weight: bold;
+  }
+  
+  
+  .todolist{
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .wrapperTodoist{
+    padding: 0 50px 80px 50px;
+    box-sizing: border-box;
+  
+  }
+  
+  .todo{
+    margin-top: 20px;
+    border: solid 1px black;
+  }
+  .todoContent{
+    display: flex;
+    padding: 13px;
+  }
+  .checkbox{
+    width: 16px;
+    height: 16px;
+  }
+  .todoLabel{
+    margin-left: 10px;
+    flex: 1;
+  }
+  .todoBtn{
+    width: 90px;
+    height: 27px;
+    margin: 0 10px;
+  }
+  .detailBtn{
+    background-color: #00bcd4;
+  }
+  .removeBtn{
+    background-color: #d9534f;
+  }
+  .bulkBlock{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+  }
+  .bulkBtn{
+    width: 130px;
+    height: 30px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  .doneBtn{
+    background-color: #2196f3;
+  }
+  .todoDetail{
+    border-top: solid 1px black;
+    padding: 20px;
+  }
+  
 }

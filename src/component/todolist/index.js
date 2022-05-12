@@ -28,7 +28,7 @@ export default function Todolist({ todolist, setTodolist }) {
     setTodolist(newTodolist);
     setArrIdChecked([]);
   };
-  const [searchInput, setSearchInput] = useState();
+  const [searchInput, setSearchInput] = useState("");
   return (
     <div className="todolist">
       <div className="wrapperTodoist">
@@ -52,7 +52,7 @@ export default function Todolist({ todolist, setTodolist }) {
                     />
                   );
                 } else {
-                  return <></>;
+                  return;
                 }
               })
             : todolist.map((todo) => {
