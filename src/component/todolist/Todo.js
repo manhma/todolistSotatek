@@ -6,6 +6,7 @@ export default function Todo({ todo, todolist, setTodolist, handleChecked }) {
   const [editDesc, setEditDesc] = useState(todo.desciption);
   const [editDate, setEditDate] = useState(todo.dueDate);
   const [editPriority, setEditPriority] = useState(todo.priority);
+  console.log(editPriority, todo.priority);
   const handleUpdate = () => {
     const newTodolist = todolist.map((item) => {
       if (item.id === todo.id) {

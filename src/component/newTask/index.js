@@ -14,7 +14,7 @@ export default function NewTask({ todolist, setTodolist }) {
   const [titleInput, setTitleInput] = useState("");
   const [descInput, setDescInput] = useState("");
   const [dateInput, setDateInput] = useState(today);
-  const [priorityInput, setPriorityInput] = useState("normal");
+  const [priorityInput, setPriorityInput] = useState("Normal");
 
   const handleSubmit = () => {
     setTodolist((prev) => {
@@ -36,7 +36,7 @@ export default function NewTask({ todolist, setTodolist }) {
     setTitleInput("");
     setDescInput("");
     setDateInput(today);
-    setPriorityInput("normal");
+    setPriorityInput("Normal");
   };
   return (
     <div className="newTask">
